@@ -27,6 +27,13 @@ git clone https://github.com/klingerkrieg/laravel-traducao-pt-br ./resources/lan
 git submodule add https://github.com/klingerkrieg/laravel-traducao-pt-br ./resources/lang/pt-br
 ```
 
+Faça o commit no repositório e depois vá no seu projeto e rode o update.
+
+```shellscript
+git submodule update --remote --merge
+```
+
+
 Então, edite o arquivo **config/app.php** para alterar o idioma padrão da sua aplicação:
 
 ```php
