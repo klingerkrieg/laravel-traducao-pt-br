@@ -19,7 +19,12 @@ Arquivos de tradução para todas as mensagens padrões do [Laravel](https://lar
 Clone o projeto para dentro do diretório **resources/lang/** do seu projeto Laravel, nomeando à pasta como **pt-br**:
 
 ```shellscript
-git clone https://github.com/rafaellaurindo/laravel-traducao-pt-br ./resources/lang/pt-br
+git clone https://github.com/klingerkrieg/laravel-traducao-pt-br ./resources/lang/pt-br
+```
+
+
+```shellscript
+git submodule add https://github.com/klingerkrieg/laravel-traducao-pt-br ./resources/lang/pt-br
 ```
 
 Então, edite o arquivo **config/app.php** para alterar o idioma padrão da sua aplicação:
