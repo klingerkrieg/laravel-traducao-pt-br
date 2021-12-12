@@ -85,7 +85,8 @@ return [
     'present' => 'O campo :attribute deve estar presente.',
     'regex' => 'O campo :attribute tem um formato inválido.',
     'required' => 'O campo :attribute é obrigatório.',
-    'required_if' => 'O campo :attribute é obrigatório quando :other for :value.',
+    #'required_if' => 'O campo :attribute é obrigatório quando :other for :value.',
+    'required_if' => 'O campo :attribute é obrigatório.',
     'required_unless' => 'O campo :attribute é obrigatório exceto quando :other for :values.',
     'required_with' => 'O campo :attribute é obrigatório quando :values está presente.',
     'required_with_all' => 'O campo :attribute é obrigatório quando :values está presente.',
@@ -108,9 +109,16 @@ return [
 
     'custom' => [
         'attribute-name' => [
-            'rule-name' => 'custom-message',
+            'required_if' => '',
         ],
     ],
 
-    'attributes' => [],
+    'attributes' => [
+        'name'=>'Nome',
+        'email'=>'E-mail',
+        'password'=>'Senha',
+        'phone'=>'Telefone',
+        'cpf'=>'CPF',
+        'other_institute'=>'Nome da instituição',
+    ],
 ];
